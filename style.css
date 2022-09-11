@@ -1,0 +1,277 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'hutura'; 
+    src: url('font/Futura-DemObl.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'hutura2'; 
+    src: url('font/Futura-Bol.ttf') format('truetype');
+  }
+
+.bg-switcher{
+    width: 100vw;
+    height: 100vh;
+    background-position: center center;
+    background-size: cover;
+    background-image: url(images/background1.jpg);
+}
+
+.bg-switcher img{
+    margin: 241px 270px 0;
+    width: 900px;
+}
+
+.bg-switcher p{
+    font-family: hutura;
+    font-size: 45px;
+    text-align: center;
+    margin: 30px 0 0;
+    font-weight: 100;
+    color: white;
+    
+}
+
+h2{
+    font-family: hutura2;
+    font-size: 53.3px;
+    color: hsl(228 69% 55%);
+    font-weight: 700;
+    padding: 40px;
+    text-align: center;
+}
+
+
+.intro_content1,.intro_content2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+
+
+
+#intro p{
+    width: 400px;
+    margin: 0 50px 30px;
+    line-height: 32px;
+}
+
+.intro_text{
+    width: 500px;
+  
+}
+
+.intro_content1 a{
+    background-color:hsl(228 69% 55%);
+    color: white;
+    border-radius: 12px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 40px;
+    text-align: center;
+    display: block;
+    width: 170px;
+    text-decoration: none;
+    margin: 0 115px 30px;
+}
+
+.intro_content2 a{
+    background-color:hsl(45 100% 50%);
+    color: white;
+    border-radius: 12px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 40px;
+    text-align: center;
+    display: block;
+    width: 170px;
+    text-decoration: none;
+    margin: 0 115px 30px;
+}
+
+a:hover{
+    box-shadow:hsl(193 4% 54% / 0.4) 0px 2px 15px 2px;
+}
+
+#particle_bg{
+    background-color: rgba(186, 213, 245, 0.6);
+    height: 1050px;
+
+
+}
+
+.course_img{
+    width: 150px;
+    height: 148px;
+    margin: 0 15px;
+    display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.course_all{
+    display: flex;
+    flex-wrap:wrap;
+    padding: 0 135px;
+    justify-content: center;
+   
+    }
+
+.course_in{
+   z-index: 5;
+
+}
+
+#particle_bg{
+    z-index: -1;
+}
+
+.course_content{
+    width: 180px;
+    height: 280px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow:hsl(200 18% 51% / 0.2) 0px 1px 3px 0px;
+    text-align: center;
+    padding: 30px;
+    margin: 20px 10px 10px;
+}
+
+#courses p{
+    padding: 20px 0 0;
+    font-weight: 700;
+    margin: 10px;
+    color:hsl(210 60% 24%);
+    font-size: 14.6px;
+}
+
+#courses a{
+    display: block;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 40px;
+    text-decoration: none;
+    border-radius: 12px;
+    color: white;
+    width: 170px;
+    height: 40px;
+    text-align: center;
+    margin-top: 20px;
+
+}
+
+#images ul{
+    width: 1152px;
+    margin: 30px auto 80px;
+
+}
+
+.slider-2 .slick-slide {
+    width: 288px;
+    margin: 0 0px;
+    position: relative;
+    overflow: hidden;
+  }
+  .slider-2 .slick-slide img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .slick-prev:before, .slick-next:before {
+    color: #000;/*黒にする*/
+    opacity: 1;/*デフォルトは.75が指定されている*/
+}
+
+.slick-prev {
+    left: 0;
+    z-index: 1;
+}
+ 
+.slick-next {
+    right: 0;
+
+}
+
+
+  .slider-2 .slick-next {
+    right: 0;
+  }
+  .slider-2 .slick-prev {
+    left: -30px;
+    position: absolute;
+  }
+  .slider-2 .slick-next::before {
+    left: 30px;
+    position: absolute;
+  }
+  .slider-2 .slick-prev::before {
+    border-width: 0 0 3px 3px;
+    right: 22px;
+  }
+  .dots-2 .slick-dots {
+    text-align: center;
+    position: absolute;
+   top:400px;
+    left: 150px;
+  }
+  .dots-2 .slick-dots li {
+    display: inline-block;
+  }
+  .dots-2 .slick-dots button {
+    display: block;
+    width: 10px;
+    height: 10px;
+    margin: 6px;
+    top:100px;
+    font-size: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+
+    border-radius: 50%;
+  }
+  .dots-2 .slick-dots .slick-active button {
+    background: #000;
+  }
+
+#acsess{
+    padding:0px 0px 40px;
+    
+}
+
+.map{
+    text-align: center;
+}
+
+iframe{
+    width: 600px;
+    height: 400px;
+}
+
+footer{
+    text-align: center;
+}
+
+footer p{
+    color:hsl(228 69% 55%);
+    line-height: 60px;
+    font-family: hutura2;
+}
+
+
+.effect-fade {
+    opacity: 0;
+    transform: translate(0, 100px); /* フェードインで動く高さを指定 */
+    transition: all 2000ms; /* フェードインにかかる時間を指定 */
+  }
+  .effect-scroll {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
