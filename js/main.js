@@ -5,16 +5,16 @@ $(function($) {
         loop: true
     });
 
-    $('#js-slider-2').slick({
-        arrows: true, // 前・次のボタンを表示する
-        dots: true, // ドットナビゲーションを表示する
-        appendDots: $('.dots-2'), // ドットナビゲーションの生成位置を変更
-        speed: 1000, // スライドさせるスピード（ミリ秒）
-        slidesToShow: 1, // 表示させるスライド数
-        centerMode: false, // slidesToShowが奇数のとき、現在のスライドを中央に表示する
-        variableWidth: true, // スライド幅の自動計算を無効化
-        autoplay:true,
-      });
+    // $('#js-slider-2').slick({
+    //     arrows: true, // 前・次のボタンを表示する
+    //     dots: true, // ドットナビゲーションを表示する
+    //     appendDots: $('.dots-2'), // ドットナビゲーションの生成位置を変更
+    //     speed: 1000, // スライドさせるスピード（ミリ秒）
+    //     slidesToShow: 1, // 表示させるスライド数
+    //     centerMode: false, // slidesToShowが奇数のとき、現在のスライドを中央に表示する
+    //     variableWidth: true, // スライド幅の自動計算を無効化
+    //     autoplay:true,
+    //   });
 
     particlesJS("particle_bg", {
         "particles":{
@@ -104,6 +104,22 @@ $(function($) {
             $(this).addClass("effect-scroll");
           }
         });
+      });
+
+      $(".slider").slick({
+        arrows: true,
+        autoplay: true,
+        adaptiveHeight: true,
+        dots: true,
+        slidesToShow: 4,
+        responsive: [
+          {
+            breakpoint: 1400, // 399px以下のサイズに適用
+            settings: {
+              slidesToShow: 1,
+            },
+          },
+        ],
       });
        
 });
